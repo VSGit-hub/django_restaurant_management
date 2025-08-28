@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctica Restaurant Color Palettes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .palette-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .palette {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .palette-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .color-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .color-name {
+            font-size: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px;
+        }
+
+        .hex-code {
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(3px);
+            padding: 2px 8px;
+            border-radius: 5px;
+        }
+
+        /* Text color for dark backgrounds */
+        .dark-text { color: #fff; }
+        .light-text { color: #333; }
+
+    </style>
+</head>
+<body>
+
+<div class="palette-container">
+
+    <div class="palette">
+        <h2 class="palette-title">1. "Glacial Grotto" - Mystical & Serene</h2>
+        <div class="colors">
+            <div class="color-box light-text" style="background-color: #B0C4DE;">
+                <span class="color-name">Icy Blue-Gray</span>
+                <span class="hex-code">#B0C4DE</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #008080;">
+                <span class="color-name">Deep Teal</span>
+                <span class="hex-code">#008080</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #DAA520;">
+                <span class="color-name">Warm Gold</span>
+                <span class="hex-code">#DAA520</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #E6E6FA;">
+                <span class="color-name">Pale Lavender</span>
+                <span class="hex-code">#E6E6FA</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="palette">
+        <h2 class="palette-title">2. "Aurora Borealis Bistro" - Vibrant & Energetic</h2>
+        <div class="colors">
+            <div class="color-box dark-text" style="background-color: #36454F;">
+                <span class="color-name">Dark Charcoal Gray</span>
+                <span class="hex-code">#36454F</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #6F00FF;">
+                <span class="color-name">Electric Indigo</span>
+                <span class="hex-code">#6F00FF</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #50C878;">
+                <span class="color-name">Emerald Green</span>
+                <span class="hex-code">#50C878</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #FF69B4;">
+                <span class="color-name">Hot Pink</span>
+                <span class="hex-code">#FF69B4</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #C0C0C0;">
+                <span class="color-name">Silver</span>
+                <span class="hex-code">#C0C0C0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="palette">
+        <h2 class="palette-title">3. "Explorer's Lodge" - Rustic & Cozy</h2>
+        <div class="colors">
+            <div class="color-box light-text" style="background-color: #F5F5DC;">
+                <span class="color-name">Warm Cream</span>
+                <span class="hex-code">#F5F5DC</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #E97451;">
+                <span class="color-name">Burnt Sienna</span>
+                <span class="hex-code">#E97451</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #228B22;">
+                <span class="color-name">Deep Forest Green</span>
+                <span class="hex-code">#228B22</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #D2691E;">
+                <span class="color-name">Rusty Orange</span>
+                <span class="hex-code">#D2691E</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="palette">
+        <h2 class="palette-title">4. "Bioluminescent Bay" - Surreal & Dreamlike</h2>
+        <div class="colors">
+            <div class="color-box dark-text" style="background-color: #000080;">
+                <span class="color-name">Deep Navy Blue</span>
+                <span class="hex-code">#000080</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #40E0D0;">
+                <span class="color-name">Turquoise</span>
+                <span class="hex-code">#40E0D0</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #CCFF00;">
+                <span class="color-name">Electric Lime</span>
+                <span class="hex-code">#CCFF00</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #E0FFFF;">
+                <span class="color-name">Pale Cyan</span>
+                <span class="hex-code">#E0FFFF</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #000000;">
+                <span class="color-name">Black</span>
+                <span class="hex-code">#000000</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

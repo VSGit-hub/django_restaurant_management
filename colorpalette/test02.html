@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostbite Color Palette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        .palette-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .palette {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .palette-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .colors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .color-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .color-name {
+            font-size: 1em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin-bottom: 5px;
+        }
+
+        .hex-code {
+            font-size: 0.9em;
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(3px);
+            padding: 2px 8px;
+            border-radius: 5px;
+        }
+
+        /* Text color for dark backgrounds */
+        .dark-text { color: #fff; }
+        .light-text { color: #333; }
+
+    </style>
+</head>
+<body>
+
+<div class="palette-container">
+
+    <div class="palette">
+        <h2 class="palette-title">"Frostbite" Color Palette</h2>
+        <div class="colors">
+            <div class="color-box dark-text" style="background-color: #45A0E6;">
+                <span class="color-name">Glacier Blue</span>
+                <span class="hex-code">#45A0E6</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #F7F7F7;">
+                <span class="color-name">Snowy White</span>
+                <span class="hex-code">#F7F7F7</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #2F4F7F;">
+                <span class="color-name">Deep Sea Ice</span>
+                <span class="hex-code">#2F4F7F</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #34C759;">
+                <span class="color-name">Aurora Green</span>
+                <span class="hex-code">#34C759</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #E5E5EA;">
+                <span class="color-name">Frosty Gray</span>
+                <span class="hex-code">#E5E5EA</span>
+            </div>
+            <div class="color-box light-text" style="background-color: #F5F5DC;">
+                <span class="color-name">Polar Beige</span>
+                <span class="hex-code">#F5F5DC</span>
+            </div>
+            <div class="color-box dark-text" style="background-color: #232B33;">
+                <span class="color-name">Iceberg Dark</span>
+                <span class="hex-code">#232B33</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
