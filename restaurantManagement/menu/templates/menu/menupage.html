@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<main>
+    {% for category in categories %}
+        <h2>{{ category.category_name }}</h2>
+        <article>
+            {% for item in category.item_category.all %}
+            <div>
+                {% if item.image %}
+                    <img src="{{ item.image }}" alt="{{ item.item_name }}">
+                {% endif %}
+            </div>
+            <div>
+                <div>
+                    <p><strong>{{ item.item_name }}</strong></p>
+                    <p>{{ item.item_price }}</p>
+                </div>
+                <div>
+                    {{item.item_description }}
+                </div>
+            </div>
+            {% endfor %}
+        </article>
+    {% endfor %}
+</main>
+{% endblock %}

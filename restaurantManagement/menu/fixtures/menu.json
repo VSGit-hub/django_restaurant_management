@@ -1,0 +1,44 @@
+[
+  { "model": "menu.itemcategory", "pk": 1, "fields": { "category_name": "Starters" } },
+  { "model": "menu.itemcategory", "pk": 2, "fields": { "category_name": "Main Course" } },
+  { "model": "menu.itemcategory", "pk": 3, "fields": { "category_name": "Desserts" } },
+  { "model": "menu.itemcategory", "pk": 4, "fields": { "category_name": "Beverages" } },
+  { "model": "menu.itemcategory", "pk": 5, "fields": { "category_name": "Soups" } },
+  { "model": "menu.itemcategory", "pk": 6, "fields": { "category_name": "Salads" } },
+
+  { "model": "menu.menuitem", "pk": 1, "fields": { "item_name": "Paneer Tikka", "item_description": "Grilled cottage cheese cubes marinated with Indian spices.", "item_price": "250.00", "item_category": 1, "image": "menu_images/paneer_tikka.jpg" } },
+  { "model": "menu.menuitem", "pk": 2, "fields": { "item_name": "Veg Spring Rolls", "item_description": "Crispy rolls stuffed with spiced vegetables.", "item_price": "180.00", "item_category": 1, "image": "menu_images/spring_rolls.jpg" } },
+  { "model": "menu.menuitem", "pk": 3, "fields": { "item_name": "Chicken Wings", "item_description": "Spicy deep-fried chicken wings served with dip.", "item_price": "220.00", "item_category": 1, "image": "menu_images/chicken_wings.jpg" } },
+  { "model": "menu.menuitem", "pk": 4, "fields": { "item_name": "Hara Bhara Kebab", "item_description": "Healthy vegetarian kebabs made with spinach and peas.", "item_price": "200.00", "item_category": 1, "image": "menu_images/hara_bhara_kebab.jpg" } },
+  { "model": "menu.menuitem", "pk": 5, "fields": { "item_name": "French Fries", "item_description": "Crispy golden fries with seasoning.", "item_price": "120.00", "item_category": 1, "image": "menu_images/french_fries.jpg" } },
+
+  { "model": "menu.menuitem", "pk": 6, "fields": { "item_name": "Butter Chicken", "item_description": "Tender chicken cooked in creamy tomato gravy.", "item_price": "380.00", "item_category": 2, "image": "menu_images/butter_chicken.jpg" } },
+  { "model": "menu.menuitem", "pk": 7, "fields": { "item_name": "Paneer Butter Masala", "item_description": "Cottage cheese in rich buttery tomato curry.", "item_price": "320.00", "item_category": 2, "image": "menu_images/paneer_butter_masala.jpg" } },
+  { "model": "menu.menuitem", "pk": 8, "fields": { "item_name": "Chicken Biryani", "item_description": "Aromatic basmati rice with chicken and spices.", "item_price": "350.00", "item_category": 2, "image": "menu_images/chicken_biryani.jpg" } },
+  { "model": "menu.menuitem", "pk": 9, "fields": { "item_name": "Veg Pulao", "item_description": "Fragrant rice with vegetables and mild spices.", "item_price": "220.00", "item_category": 2, "image": "menu_images/veg_pulao.jpg" } },
+  { "model": "menu.menuitem", "pk": 10, "fields": { "item_name": "Dal Tadka", "item_description": "Yellow lentils tempered with ghee and spices.", "item_price": "180.00", "item_category": 2, "image": "menu_images/dal_tadka.jpg" } },
+
+  { "model": "menu.menuitem", "pk": 11, "fields": { "item_name": "Gulab Jamun", "item_description": "Soft milk dumplings in sugar syrup.", "item_price": "120.00", "item_category": 3, "image": "menu_images/gulab_jamun.jpg" } },
+  { "model": "menu.menuitem", "pk": 12, "fields": { "item_name": "Rasgulla", "item_description": "Spongy cheese balls soaked in syrup.", "item_price": "100.00", "item_category": 3, "image": "menu_images/rasgulla.jpg" } },
+  { "model": "menu.menuitem", "pk": 13, "fields": { "item_name": "Chocolate Brownie", "item_description": "Rich chocolate brownie with nuts.", "item_price": "150.00", "item_category": 3, "image": "menu_images/brownie.jpg" } },
+  { "model": "menu.menuitem", "pk": 14, "fields": { "item_name": "Ice Cream Sundae", "item_description": "Vanilla ice cream topped with chocolate sauce.", "item_price": "130.00", "item_category": 3, "image": "menu_images/icecream_sundae.jpg" } },
+  { "model": "menu.menuitem", "pk": 15, "fields": { "item_name": "Cheesecake", "item_description": "Creamy cheesecake with a biscuit base.", "item_price": "200.00", "item_category": 3, "image": "menu_images/cheesecake.jpg" } },
+
+  { "model": "menu.menuitem", "pk": 16, "fields": { "item_name": "Masala Chai", "item_description": "Traditional Indian tea with spices.", "item_price": "50.00", "item_category": 4, "image": "menu_images/masala_chai.jpg" } },
+  { "model": "menu.menuitem", "pk": 17, "fields": { "item_name": "Cold Coffee", "item_description": "Iced coffee topped with whipped cream.", "item_price": "90.00", "item_category": 4, "image": "menu_images/cold_coffee.jpg" } },
+  { "model": "menu.menuitem", "pk": 18, "fields": { "item_name": "Mango Shake", "item_description": "Fresh mango blended with milk.", "item_price": "100.00", "item_category": 4, "image": "menu_images/mango_shake.jpg" } },
+  { "model": "menu.menuitem", "pk": 19, "fields": { "item_name": "Lassi", "item_description": "Sweet yogurt-based drink.", "item_price": "80.00", "item_category": 4, "image": "menu_images/lassi.jpg" } },
+  { "model": "menu.menuitem", "pk": 20, "fields": { "item_name": "Green Tea", "item_description": "Refreshing antioxidant-rich tea.", "item_price": "60.00", "item_category": 4, "image": "menu_images/green_tea.jpg" } },
+
+  { "model": "menu.menuitem", "pk": 21, "fields": { "item_name": "Tomato Soup", "item_description": "Classic tomato soup with herbs.", "item_price": "120.00", "item_category": 5, "image": "menu_images/tomato_soup.jpg" } },
+  { "model": "menu.menuitem", "pk": 22, "fields": { "item_name": "Sweet Corn Soup", "item_description": "Thick soup with sweet corn kernels.", "item_price": "130.00", "item_category": 5, "image": "menu_images/sweet_corn_soup.jpg" } },
+  { "model": "menu.menuitem", "pk": 23, "fields": { "item_name": "Hot & Sour Soup", "item_description": "Spicy and tangy soup with vegetables.", "item_price": "140.00", "item_category": 5, "image": "menu_images/hot_sour_soup.jpg" } },
+  { "model": "menu.menuitem", "pk": 24, "fields": { "item_name": "Manchow Soup", "item_description": "Indo-Chinese style spicy soup.", "item_price": "150.00", "item_category": 5, "image": "menu_images/manchow_soup.jpg" } },
+  { "model": "menu.menuitem", "pk": 25, "fields": { "item_name": "Mushroom Soup", "item_description": "Creamy soup made with fresh mushrooms.", "item_price": "160.00", "item_category": 5, "image": "menu_images/mushroom_soup.jpg" } },
+
+  { "model": "menu.menuitem", "pk": 26, "fields": { "item_name": "Caesar Salad", "item_description": "Classic salad with lettuce and dressing.", "item_price": "220.00", "item_category": 6, "image": "menu_images/caesar_salad.jpg" } },
+  { "model": "menu.menuitem", "pk": 27, "fields": { "item_name": "Greek Salad", "item_description": "Fresh salad with feta cheese and olives.", "item_price": "240.00", "item_category": 6, "image": "menu_images/greek_salad.jpg" } },
+  { "model": "menu.menuitem", "pk": 28, "fields": { "item_name": "Fruit Salad", "item_description": "Mixed seasonal fruits with honey.", "item_price": "180.00", "item_category": 6, "image": "menu_images/fruit_salad.jpg" } },
+  { "model": "menu.menuitem", "pk": 29, "fields": { "item_name": "Russian Salad", "item_description": "Creamy salad with boiled vegetables.", "item_price": "200.00", "item_category": 6, "image": "menu_images/russian_salad.jpg" } },
+  { "model": "menu.menuitem", "pk": 30, "fields": { "item_name": "Sprout Salad", "item_description": "Healthy salad with sprouts and lemon dressing.", "item_price": "150.00", "item_category": 6, "image": "menu_images/sprout_salad.jpg" } }
+]
