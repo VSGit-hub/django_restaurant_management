@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Book a Table</h2>
+
+<form method="post">
+  {% csrf_token %}
+
+  {% for field in form %}
+    <div class="mb-3">
+      {{ field.label_tag }}
+      {{ field }}
+      <small class="form-text text-muted">{{ field.help_text }}</small>
+      {% for error in field.errors %}
+        <div class="text-danger">{{ error }}</div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+
+  {% if form.non_field_errors %}
+    <div class="alert alert-danger">
+      {{ form.non_field_errors }}
+    </div>
+  {% endif %}
+
+  <button type="submit" class="btn btn-primary">Reserve</button>
+</form>
+{% endblock %}

@@ -11,7 +11,7 @@ class Tables(models.Model):
         ('U', 'Under Maintanance')
     )
 
-    status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='A')
 
     SEATING_CHOICES =(
         ('AC', "Air Conditioner Room"),
@@ -21,12 +21,19 @@ class Tables(models.Model):
 
     seating = models.CharField(max_length=2, choices=SEATING_CHOICES)
 
+    @classmethod
+    def get_available_table(cls, capcity):
+        return cls.objects.filter(
+            capacity__gte=capcity,
+            status='A'
+            ).order_by('capacity').first()
+
     def __str__(self):
         return f"Table: {self.table_number} {self.seating} {self.capacity}"
 
 class Reservations(models.Model):
     customer_name = models.CharField(max_length=200, blank=False)
-    phone = models.IntegerField(max_length=10)
+    phone = models.IntegerField()
     email = models.EmailField()
     no_of_guests = models.IntegerField()
     alloted_table = models.ForeignKey(Tables, on_delete=models.PROTECT)

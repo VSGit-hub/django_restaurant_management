@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        <h2>Booking Successful</h2>
+        <p>Congratulations, your booking is completed.</p>
+    </div>
+    {% comment %} <div>
+        <h3>Booking Summary</h3>
+        <ul>
+            <li>Name: {{ reservation.customer_name }}</li>
+            <li>Phone: {{ reservation.phone }}</li>
+            <li>Email: {{ reservation.email }}</li>
+            <li>Guests: {{ reservation.no_of_guests }}</li>
+            <li>Table: {{ reservation.booked_table }}</li>
+        </ul>
+    </div> {% endcomment %}
+{% endblock %}
