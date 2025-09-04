@@ -11,6 +11,5 @@ urlpatterns = [
     path('', RedirectView.as_view(url='home/' )),
     path('menu/', include('menu.urls')),
     path('reserve/', include('reservation.urls')),
-    path('user/', include('customers.urls'))
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
